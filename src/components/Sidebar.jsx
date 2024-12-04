@@ -34,7 +34,7 @@ const Sidebar = () => {
             ? 180
             : 256 
           : isMobile
-          ? 60 
+          ? 80 
           : 80, 
       }}
     >
@@ -51,7 +51,7 @@ const Sidebar = () => {
         <nav className="mt-8 flex-grow">
           {SIDEBAR_ITEMS.map((item) => (
             <Link key={item.href} to={item.href}>
-              <motion.div className="flex items-center p-4 text-sm font-medium rounded-lg hover:bg-gray-700 transition-colors mb-2">
+              <motion.div className="flex items-center p-4 px-3 text-sm font-medium rounded-lg hover:bg-gray-700 transition-colors mb-2">
                 <item.icon size={20} style={{ color: item.color, minWidth: "20px" }} />
                 <AnimatePresence>
                   {isSidebarOpen && (
