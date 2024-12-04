@@ -7,9 +7,9 @@ const PRODUCT_DATA = [
   {id: 1, photoURL: 'https://agileschool.com.br/wp-content/uploads/2024/11/IMG_0064.png', name: 'PPDV – Professional Product Discovery and Validation™', category: 'Scrum.org', price:1.701 , stock: 22, sales: 2},
   {id: 2, photoURL: 'https://agileschool.com.br/wp-content/uploads/2024/05/PSPO.png',name: 'PSPO – Professional Scrum Product Owner™',  category: 'Scrum.org', price:2.790 , stock: 9, sales: 15},
   {id: 3, photoURL: 'https://agileschool.com.br/wp-content/uploads/2024/05/PSM.png', name: 'PSM – Professional Scrum Master™',  category: 'Scrum.org', price: 1.990 , stock: 4, sales: 20},
-  {id: 4, photoURL: 'https://agileschool.com.br/wp-content/uploads/2024/11/logo-kanban.png', name: 'KSD – Kanban System Design',  category: 'Kanban University', price:2.400 , stock: 22, sales: 7},
-  {id: 5, photoURL: 'https://agileschool.com.br/wp-content/uploads/2024/11/logo-kanban.png', name: 'KSI – Kanban System Improvement',  category: 'Kanban University', price:2.400 , stock: 24, sales: 0},
-  {id: 6, photoURL: 'https://agileschool.com.br/wp-content/uploads/2024/11/logo-customerExperience.png', name: 'F4P – Fit for Purpose',  category: 'Kanban University', price:1.701 , stock: 22, sales: 7},
+  {id: 4, photoURL: 'https://agileschool.com.br/wp-content/uploads/2024/11/logo-kanban.png', name: 'KSD – Kanban System Design',  category: 'Kanban University', price:2.400 , stock: 22, sales: 7, className: 'highlight'},
+  {id: 5, photoURL: 'https://agileschool.com.br/wp-content/uploads/2024/11/logo-kanban.png', name: 'KSI – Kanban System Improvement',  category: 'Kanban University', price:2.400 , stock: 24, sales: 0, className: 'highlight'},
+  {id: 6, photoURL: 'https://agileschool.com.br/wp-content/uploads/2024/11/logo-customerExperience.png', name: 'F4P – Fit for Purpose',  category: 'Kanban University', price:1.701 , stock: 22, sales: 7, className: 'highlight'},
   {id: 7, photoURL: 'https://agileschool.com.br/wp-content/uploads/2024/05/PSMA-II.png', name: 'PSM-A – Professional Scrum Master Advanced Training™',  category: 'Scrum.org', price: 2.790 , stock: 22, sales: 7},
   {id: 8, photoURL: 'https://agileschool.com.br/wp-content/uploads/2024/05/SAFe.png', name: 'Leading SAFe® (Preparatório para certificação SAFe® 6 Agilist)',  category: 'Scaled Agile', price:1.701 , stock: 22, sales: 7},
   {id: 9, photoURL: 'https://agileschool.com.br/wp-content/uploads/2024/05/M-30-Foundation-Workshop.png', name: 'Management 3.0 Foundation Workshop',  category: 'Management 3.0', price:1.701 , stock: 22, sales: 7},
@@ -97,8 +97,9 @@ const ProductsTable = () => {
               >
                 <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-100 flex gap-2 items-center">
                   <img 
-                    src={product.photoURL} alt="logo-PSPBM"
-                    className="size-10"           
+                    src={product.photoURL}
+                    className={`w-12 ${product.className === 'highlight' ? 'custom-size' : 'size-10'}`}         
+                    alt={`logo-${product.name}`} 
                   />
                   {product.name}
                 </td>
