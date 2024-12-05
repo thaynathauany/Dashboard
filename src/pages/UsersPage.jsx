@@ -1,11 +1,12 @@
 import { BarChart2, UserCheck, UserIcon, UserPlus } from "lucide-react"
 import { motion } from "framer-motion"
-import Header from "../components/common/Header"
 import { StateCard } from "../components/common/StateCard"
-import SalesOverviewChart from "../components/overview/SalesOverviewChart"
-import CategoryDistributionChart from "../components/overview/CategoryDistributionChart"
-import SalesChannelChart from "../components/overview/SalesChannelChart"
+import Header from "../components/common/Header"
 import UsersTable from "../components/users/UsersTable"
+
+import UserActivityHeatmap from "../components/users/UserActivityHeatmap"
+import UserDemograpicChart from "../components/users/UserDemograpicChart"
+import UserGrowthChart from "../components/users/USerGrowthChart"
 
 const userStats = {
     totalUsers: 152845,
@@ -42,11 +43,11 @@ const UsersPage = () => {
 
         <UsersTable />
 
-      {/* CHARTS */}
+      {/* USER CHARTS */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-        <SalesOverviewChart />
-        <CategoryDistributionChart />
-        <SalesChannelChart />
+        <UserGrowthChart />
+        <UserActivityHeatmap />
+        <UserDemograpicChart />
       </div>
       </main>
     </div>
