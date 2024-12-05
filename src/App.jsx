@@ -1,8 +1,9 @@
-import { Route, Routes } from "react-router-dom"
-import OverviewPage from "./pages/OverviewPage"
-import ProductsPage from "./pages/ProductsPage"
-import Sidebar from "./components/Sidebar"
-import UsersPage from "./pages/UsersPage"
+import { Route, Routes } from "react-router-dom";
+import OverviewPage from "./pages/OverviewPage";
+import ProductsPage from "./pages/ProductsPage";
+import UsersPage from "./pages/UsersPage";
+import SalesPage from "./pages/SalesPAge";
+import Sidebar from "./components/Sidebar";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/" element={< OverviewPage />}> </Route>
         <Route path="/produtos" element={< ProductsPage />}> </Route>
         <Route path="/usuarios" element={< UsersPage />}> </Route>
+        <Route path="/vendas" element={< SalesPage />} ></Route>
       </Routes>
     </div>
   )

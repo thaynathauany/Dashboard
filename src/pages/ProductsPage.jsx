@@ -10,7 +10,7 @@ import SalesTrendChart from "../components/products/SalesTrendChart"
 const ProductsPage = () => {
   return (
     <div className="flex-1 overflow-auto relative z-10">
-      <Header title={"Produtos"} />
+      <Header title={"Vendas"} />
       <main className="max-w-7xl mx-auto py-6 px-4 lg:px-8">
       {/* STATS */}
         <motion.div 
@@ -24,11 +24,11 @@ const ProductsPage = () => {
         />   
         <StateCard 
           name="Mais vendidos" icon={TrendingUp} value='Professional
-Scrum Master™' color='#10b981'
+          Scrum Master™' color='#10b981'
         />   
         <StateCard 
           name="Baixo Estoque" icon={AlertTriangle} value='Professional
-Scrum Product Owner™' color='#f59e0b'
+          Scrum Product Owner™' color='#f59e0b'
         />   
         <StateCard 
           name="Total de Venda" icon={DollarSign} value='R$20.850' color='#ef4444'
