@@ -5,15 +5,10 @@ import { CreditCard, DollarSign, ShoppingCart, TrendingUp } from "lucide-react";
 import SalesOverviewChart from "../components/sales/SalesOverviewChart";
 import SalesByCategoryChart from "../components/sales/SalesByCategoryChart";
 import DailySalesTrend from "../components/sales/DailySalesTrend";
-
-const salesStats = {
-	totalRevenue: "R$1,234,567",
-	averageOrderValue: "R$78.90",
-	conversionRate: "3.45%",
-	salesGrowth: "12.3%",
-};
+import { getSalesStats } from "./getSalesStats";
 
 const SalesPage = () => {
+  const salesStats = getSalesStats();
   return (
     <div className="flex-1 overflow-auto relative z-10">
     <Header title={"Vendas"} />
