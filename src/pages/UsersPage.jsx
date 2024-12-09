@@ -6,7 +6,7 @@ import UsersTable from "../components/users/UsersTable"
 
 import UserActivityHeatmap from "../components/users/UserActivityHeatmap"
 import UserDemograpicChart from "../components/users/UserDemograpicChart"
-import UserGrowthChart from "../components/users/USerGrowthChart"
+import UserGrowthChart from "../components/users/UserGrowthChart"
 
 const userStats = {
     totalUsers: 152845,
