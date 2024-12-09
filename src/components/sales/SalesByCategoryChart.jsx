@@ -10,7 +10,7 @@ const categoryData = [
 	{ name: "Kanban University", value: 3 },
 ];
 
-const COLORS = ["#6366F1", "#8B5CF6", "#EC4899", "#10B981", "#F59E0B"];
+const COLORS = ["#8884d8", "#82ca9d", "#ffc658", "#ff8042", "#0088fe"];
 
 const CategoryDistributionChart = () => {
   return (
@@ -19,7 +19,7 @@ const CategoryDistributionChart = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.2 }}
     >
-        <h2 className="text-lg font-medium mb-4 text-gray-400">Categorias de Vendas</h2>
+        <h2 className="text-lg font-medium mb-4 text-gray-400">Vendas por Categoria</h2>
         <div className="h-80">
             <ResponsiveContainer  width={"100%"} height={"100%"}>
                 <PieChart>

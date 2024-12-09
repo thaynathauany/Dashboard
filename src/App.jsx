@@ -4,6 +4,8 @@ import ProductsPage from "./pages/ProductsPage";
 import UsersPage from "./pages/UsersPage";
 import SalesPage from "./pages/SalesPage";
 import Sidebar from "./components/Sidebar";
+import OrdersPage from "./pages/OrdersPage";
+import AnalyticsPage from "./pages/AnalyticsPage";
 
 
 function App() {
@@ -21,6 +23,8 @@ function App() {
         <Route path="/produtos" element={< ProductsPage />}> </Route>
         <Route path="/usuarios" element={< UsersPage />}> </Route>
         <Route path="/vendas" element={< SalesPage />} ></Route>
+        <Route path="/pedidos" element={< OrdersPage />} ></Route>
+        <Route path="/analytics" element={< AnalyticsPage />} ></Route>
       </Routes>
     </div>
   )

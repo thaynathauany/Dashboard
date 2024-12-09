@@ -4,10 +4,10 @@ import { useState } from "react";
 
 const monthlySalesData = [
 	{ month: "Jan", sales: 4000 },
-	{ month: "Feb", sales: 3000 },
+	{ month: "Fev", sales: 3000 },
 	{ month: "Mar", sales: 5000 },
-	{ month: "Apr", sales: 4500 },
-	{ month: "May", sales: 6000 },
+	{ month: "Abr", sales: 4500 },
+	{ month: "Mai", sales: 6000 },
 	{ month: "Jun", sales: 5500 },
 	{ month: "Jul", sales: 7000 },
 ];
@@ -32,10 +32,10 @@ const SalesOverviewChart = () => {
 					value={selectedTimeRange}
 					onChange={(e) => setSelectedTimeRange(e.target.value)}
 				>
-					<option>This Week</option>
-					<option>This Month</option>
-					<option>This Quarter</option>
-					<option>This Year</option>
+					<option>Esta Semana</option>
+					<option>Este Mês</option>
+					<option>Este Quarter</option>
+					<option>Este Ano</option>
 				</select>
 			</div>
 
