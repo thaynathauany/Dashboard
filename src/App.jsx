@@ -6,6 +6,7 @@ import SalesPage from "./pages/SalesPage";
 import Sidebar from "./components/Sidebar";
 import OrdersPage from "./pages/OrdersPage";
 import AnalyticsPage from "./pages/AnalyticsPage";
+import SettingsPage from "./pages/SettingsPage";
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
         <Route path="/vendas" element={< SalesPage />} ></Route>
         <Route path="/pedidos" element={< OrdersPage />} ></Route>
         <Route path="/analytics" element={< AnalyticsPage />} ></Route>
+        <Route path="/configuracoes" element={< SettingsPage />} ></Route>
       </Routes>
     </div>
   )
